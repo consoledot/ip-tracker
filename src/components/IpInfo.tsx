@@ -1,21 +1,32 @@
 import {IpInfoContainer} from '../styles/styles'
-export const IpInfo = ()=>(
-   <IpInfoContainer>
-       <div>
-           <h3>IP ADDRESS</h3>
-           <p>192.81676.01</p>
-       </div>
-       <div>
-           <h3>LOCATION</h3>
-           <p>Brooklyn, NY 1001</p>
-       </div>
-       <div>
-           <h3>TIME-ZONE</h3>
-           <p>UTC-05:00</p>
-       </div>
-       <div>
-           <h3>ISP</h3>
-           <p>SpaceX Starink</p>
-       </div>
-    </IpInfoContainer>
-)
+interface IpInfoProps{
+    ip: string
+    isp:string
+    location:string 
+
+}
+export const IpInfo = ({ip}:any)=>{
+   if(Object.entries(ip).length !== 0){
+    return(
+        <IpInfoContainer>
+            <div>
+                <h3>IP ADDRESS</h3>
+                <p>{ip.ip}</p>
+            </div>
+            <div>
+                <h3>LOCATION</h3>
+                <p>{ip.location.region}</p>
+            </div>
+            <div>
+                <h3>TIME-ZONE</h3>
+                <p>{ip.location.timezone}</p>
+            </div>
+            <div>
+                <h3>ISP</h3>
+                <p>{ip.isp}</p>
+            </div>
+        </IpInfoContainer>
+    )
+   }
+   return <IpInfoContainer><h1>Loading</h1></IpInfoContainer>
+}

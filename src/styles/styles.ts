@@ -4,7 +4,7 @@ export const IpInfoContainer = styled.div`
     border-radius:10px;
     display:flex;
     flex-wrap:wrap;
-    width:fit-content;
+    max-width:fit-content;
     margin:2rem auto;
     padding:1rem;
     box-shadow:  0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
@@ -31,18 +31,16 @@ export const IpInfoContainer = styled.div`
 `
 export const Header = styled.div`
     text-align:center;
-    height:35vh;
+    padding:2rem;
+    height:30vh;
     h2{
-        padding-top:1rem;
         color:white;
     }
-    div{
-        display:flex;
-        justify-content:center;
-    }
+
 `
-export const InputContainer = styled.div`
+export const InputContainer = styled.form`
     display:flex;
+    justify-content:center;
     margin-top:2rem;
     input,div{
         padding:1rem;
@@ -62,5 +60,6 @@ export const InputContainer = styled.div`
         border-top-right-radius:10px;
         border-bottom-right-radius:10px;
         font-weight:bold;
+       
     }
 `
