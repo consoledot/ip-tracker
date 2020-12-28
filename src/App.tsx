@@ -49,7 +49,7 @@ function App() {
               }/>
            <div onClick = {()=> SetText()}>{`${`>`}`}</div>
         </InputContainer>
-       <IpInfo ip = {ipAddress}/>
+       <IpInfo ipAdress = {ipAddress}/>
       </Header>
     </div>
     {Object.entries(ipAddress).length === 0 ? <h1> Loading</h1>: <Map name={ipAddress.isp} coordinate={[ipAddress.location.lat,ipAddress.location.lng]}/>}

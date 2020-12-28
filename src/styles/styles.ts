@@ -61,6 +61,6 @@ export const InputContainer = styled.form`
         border-top-right-radius:10px;
         border-bottom-right-radius:10px;
         font-weight:bold;
-       
+       cursor:pointer;
     }
 `
