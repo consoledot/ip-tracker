@@ -8,7 +8,7 @@ export const IpInfoContainer = styled.div`
     margin:2rem auto;
     padding:1rem;
     box-shadow:  0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-    z-index:100;
+    z-index:110;
     position:sticky;
     span{
         margin:0.3rem 0;
@@ -18,6 +18,7 @@ export const IpInfoContainer = styled.div`
     div{
         padding:2rem;
         display:flex;
+        margin:0 auto;
         flex-direction:column;
         h3{
             color: hsl(0, 0%, 59%);
