@@ -1,4 +1,5 @@
 import {IpInfoContainer} from '../styles/styles'
+import {Loading} from './Loading'
 interface IpInfoProps{
     ip: string
     isp:string
@@ -28,5 +29,5 @@ export const IpInfo = ({ipAdress}:any)=>{
             </IpInfoContainer>
         )
    }
-   return <IpInfoContainer><h1>Loading</h1></IpInfoContainer>
+   return <IpInfoContainer><Loading/></IpInfoContainer>
 }

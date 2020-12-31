@@ -1,6 +1,6 @@
 import {useEffect, useState, useRef} from 'react'
 import {Header,InputContainer} from './styles/styles'
-import {IpInfo,Map} from './components'
+import {IpInfo,Map, Loading} from './components'
 import backgroundImage from './pattern-bg.png'
 import './App.css'
 function App() {
@@ -52,7 +52,7 @@ function App() {
        <IpInfo ipAdress = {ipAddress}/>
       </Header>
     </div>
-    {Object.entries(ipAddress).length === 0 ? <h1> Loading</h1>: <Map name={ipAddress.isp} coordinate={[ipAddress.location.lat,ipAddress.location.lng]}/>}
+    {Object.entries(ipAddress).length === 0 ? "": <Map name={ipAddress.isp} coordinate={[ipAddress.location.lat,ipAddress.location.lng]}/>}
     </>
   );
 }

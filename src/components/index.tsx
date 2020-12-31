@@ -1,3 +1,4 @@
 import {IpInfo} from './IpInfo'
 import {Map} from './Map'
-export {Map, IpInfo}
+import {Loading} from './Loading'
+export {Map, IpInfo,Loading}

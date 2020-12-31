@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled,{keyframes} from 'styled-components'
 export const IpInfoContainer = styled.div`
     background-color:white;
     border-radius:10px;
@@ -63,4 +63,20 @@ export const InputContainer = styled.form`
         font-weight:bold;
        cursor:pointer;
     }
+`
+export const rotate = keyframes`
+  100% {
+    transform: rotate(360deg);
+  }
+`
+export const LoadingSpinner = styled.div`
+  pointer-events: none;
+  width: 10rem;
+  height: 10rem;
+  border: 0.2em solid transparent;
+  border-color: blue;
+  border-top-color: white;
+  border-radius: 50%;
+  animation: ${rotate} 1s linear infinite;
+  margin: 15% auto;
 `
