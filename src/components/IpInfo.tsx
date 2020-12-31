@@ -29,5 +29,5 @@ export const IpInfo = ({ipAdress}:any)=>{
             </IpInfoContainer>
         )
    }
-   return <IpInfoContainer><Loading/></IpInfoContainer>
+   return <Loading/>
 }

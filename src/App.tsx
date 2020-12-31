@@ -36,10 +36,9 @@ function App() {
     )
      // eslint-disable-next-line react-hooks/exhaustive-deps
   },[])
-  console.log(ipAddress)
   return (
     <>
-    <div style={{backgroundImage:`url(${backgroundImage})`}} className="App">
+    <div style={{backgroundImage:`url(${backgroundImage})`, backgroundRepeat:"no-repeat",backgroundSize:"cover"}} className="App">
       <Header>
         <h2>IP Address Tracker</h2>
         <InputContainer  onSubmit={(e)=> SetText(e)}>

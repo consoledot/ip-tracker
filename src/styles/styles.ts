@@ -1,15 +1,24 @@
 import styled,{keyframes} from 'styled-components'
-export const IpInfoContainer = styled.div`
+export const Background = styled.div`
     background-color:white;
     border-radius:10px;
-    display:flex;
-    flex-wrap:wrap;
+    box-shadow:  0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    padding:1rem; 
     max-width:fit-content;
     margin:2rem auto;
-    padding:1rem;
-    box-shadow:  0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-    z-index:110;
+   
+`
+export const IpInfoContainer = styled(Background)`
+   
     position:sticky;
+    display:flex;
+    flex-wrap:wrap;
+
+   
+    
+   
+    z-index:110;
+    
     span{
         margin:0.3rem 0;
         width:0.4rem;
@@ -28,7 +37,21 @@ export const IpInfoContainer = styled.div`
             font-weight:bold;
             margin-top:0.5rem;
         }
-    }    
+    }  
+    @media (max-width: 768px) {
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        grid-gap:10px;
+       div{
+           padding:0.4rem;
+           h3{
+               font-size:14px;
+           }
+           p{
+               font-size:14px;
+           }
+       }
+      }  
 `
 export const Header = styled.div`
     text-align:center;

@@ -1,6 +1,9 @@
-import {LoadingSpinner } from "../styles/styles";
+import {LoadingSpinner, Background } from "../styles/styles";
 export const Loading = () => (
-    <LoadingSpinner/>
+    <Background>
+        <LoadingSpinner/>
+    </Background>
+    
 
 );
   
